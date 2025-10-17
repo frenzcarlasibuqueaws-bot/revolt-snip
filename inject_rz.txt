@@ -1,0 +1,35 @@
+(() => {
+  if (window.__bridge_injected__) return;
+  window.__bridge_injected__ = true;
+
+  const ws = new WebSocket("ws://localhost:15678"); // Replace with your WS port
+  ws.onopen = () => console.log("[✓] Connected to local Node server.");
+  ws.onmessage = async (event) => {
+    try {
+      const cmd = JSON.parse(event.data);
+      if (!["send", "get"].includes(cmd.type)) throw new Error("Unknown command");
+
+      const headers = {
+        "content-type": "application/json",
+        "x-session-token": "5l1eyjKob0n3etcAwOUW2BzTosw9WezLi8mE7IkROVNAH6kJdQ8qUQDSK5e75pS_",
+        "idempotency-key": crypto.randomUUID()
+      };
+      const body = JSON.stringify({
+        content: cmd.content,
+        nonce: crypto.randomUUID(),
+        replies: []
+      });
+
+      const res = await fetch("https://revolt-api.onech.at/channels/" + cmd.channelId + "/messages", {
+        method: "POST",
+        headers,
+        body
+      });
+
+      const json = await res.json();
+      ws.send(JSON.stringify({ ...json, _replyTo: cmd }));
+    } catch (err) {
+      ws.send(JSON.stringify({ error: true, message: err.message }));
+    }
+  };
+})();

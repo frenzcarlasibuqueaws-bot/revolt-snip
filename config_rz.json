@@ -1,0 +1,114 @@
+{
+  "discord": {
+    "webhook": "https://discord.com/api/webhooks/1401560241031610570/xesG2ZznqK51ap15lXhwkQNef28piwWf7VlQqvwgGCda393LbQ0uS8m44uLJ0DPYVNh-"
+  },
+  "ownerId": 1231279252306001921,
+  "ports": {
+    "chrome": 15222,
+    "ws": 15678,
+    "tcp": 15679
+  },
+  "tempDir": "~/Desktop/revolt_rz",
+  "servers": [
+    {
+      "serverId": "01JDKZ9Y7AEPQQDA7BVQA10DZ7",
+      "delay": 75,
+      "claimMessage": "{num}|{num}|{num}",
+      "keywords": [
+        "just know claiming can sometimes be buggy.",
+        "Door Dash 45% OFF",
+        "dd",
+        "Doordash",
+        "door dash",
+        "Uber Eats Small",
+        "Uber Eats",
+        "UE",
+        "ubereats",
+        "Door Dash 45% OFF",
+        "UE SMALL",
+        "UE DELIVERY",
+        "UBER EATS SUPER SMALL DELIVERY"
+      ]
+    },
+    {
+      "serverId": "01JY5290SHY9EV3CECD5CNEMHV",
+      "delay": 75,
+      "claimMessage": "{num}|{num}|{num}",
+      "keywords": [
+        "UBER EATS",
+        "Uber Eats",
+        "Chipotle"
+      ]
+    },
+    {
+      "serverId": "01JDKH7HVTBZ2SDTYMTESVDEZA",
+      "delay": 0,
+      "claimMessage": "/claim|/claim|/claim|/claim|/claim|/claim|/claim|/claim|/claim",
+      "keywords": [
+        "UberEats Pickup",
+        "Doordash Pickup",
+        "UberEats Pickup",
+        "UE PICKUP"
+      ]
+    },
+    {
+      "serverId": "01JDKH82R0RHG2VF9YDWKEFHC5",
+      "delay": 550,
+      "claimMessage": ".",
+      "keywords": [
+        "UBEREATS DEL",
+        "DOORDASH",
+        "UBEREATS PICKUP"
+      ]
+    },
+    {
+      "serverId": "01JE90G9KMSKCZ0FSHNARTDQBN",
+      "delay": 755,
+      "claimMessage": "/claim|/claim|/claim",
+      "keywords": [
+        "Uber Eats",
+        "Door Dash 45% OFF"
+      ]
+    },
+    {
+      "serverId": "01JDN56CS41PQ3XGVN9TF62G04",
+      "delay": 105,
+      "claimMessage": "/claim",
+      "keywords": [
+        "DoorDash Delivery",
+        "UberEats Delivery"
+      ]
+    },
+    {
+      "serverId": "01JZ61Q8WN45VQ0ZMCM59T10ZX",
+      "delay": 0,
+      "claimMessage": "/claim|/claim|/claim",
+      "keywords": [
+        "\ud83d\udef5Uber eats",
+        "Doordash",
+        "New ticket has been made!"
+      ]
+    },
+    {
+      "serverId": "01JDPY161J6H6B1KBV74QWKCDM",
+      "delay": 75,
+      "claimMessage": ".",
+      "keywords": [
+        "Uber Eats Delivery \ud83e\udd69",
+        "DD Delivery \ud83c\udf65",
+        "New ticket has been made!"
+      ]
+    },
+    {
+      "serverId": "01JDKJ2C7GRNTP9KCQZJWWQ6S0",
+      "delay": 75,
+      "claimMessage": "/claim|/claim|/claim|/claim|/claim|/claim",
+      "keywords": [
+        "UE Del",
+        "UE Delivery",
+        "UBEREATS DEL",
+        "UBEREATS DELIVERY"
+      ]
+    }
+  ]
+}
